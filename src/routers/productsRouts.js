@@ -8,6 +8,6 @@ productRoutes.get('', listProductController)
 productRoutes.get('/:id', listIdProductController)
 productRoutes.patch('/:id', editProductController)
 productRoutes.delete('/:id', deleteProductController)
-productRoutes.get('/category/:category_id', listCategoryProductController)
+productRoutes.get('/category/:id', listCategoryProductController)
 
 export default productRoutes

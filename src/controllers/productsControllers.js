@@ -18,7 +18,7 @@ const editProductController = async (req, res) => {
   return res.status(200).json(editProd)
 }
 const listCategoryProductController = async (req, res) => {
-  const listCategProd = await listCategoryProductsServices()
+  const listCategProd = await listCategoryProductsServices(req.params.id)
   return res.status(200).json(listCategProd)
 }
 const listIdProductController = async (req, res) => {
